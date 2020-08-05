@@ -1,2 +1,1 @@
-# personal
-Personal libraries for cross machine usage
+Planning to host personal utilities and API's. 
