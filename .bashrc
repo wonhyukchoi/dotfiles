@@ -7,3 +7,6 @@ echo Loading terminal... | lolcat -a -s 47 -d 10
 set -o vi
 
 alias scheme="rlwrap mit-scheme"
+
+# map caps lock to escape for vi
+alias capsinit="xmodmap -e 'clear Lock' -e 'keycode 0x42 = Escape'"
