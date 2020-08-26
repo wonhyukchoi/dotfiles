@@ -4,15 +4,21 @@
 :set showcmd "Show leader keys"
 :set number "Show left hand line #'s"
 :set autoindent
-:set smartindent
-"Auto bracket closure"
-inoremap { {}<Esc>ha<Enter><Enter><Esc>ka<Tab>
-inoremap ( ()<Esc>ha
-inoremap [ []<Esc>ha
-inoremap " ""<Esc>ha
-inoremap ' ''<Esc>ha
-inoremap ` ``<Esc>ha
+:set clipboard+=unnamed
+
+"Set black hole registers 
+nnoremap <leader>d "_d 
+nnoremap <leader>dd "_dd
+nnoremap x "_x
+
+"Set tabbing defaults
+:set shiftwidth=4
+:set tabstop=4
+
+"For CLI
+inoremap { {}<Esc>ha
+
 "BELOW ARE ONLY FOR ideaVim"
-:map <C-s> :w! <Enter> <Esc>
-:inoremap <C-e> <Esc>A
-:inoremap <C-a> <Esc>I
+:map <C-s> :w! <Enter> <Esc> 
+:inoremap <C-e> <Esc> A
+:inoremap <C-a> <Esc> I
