@@ -1,9 +1,14 @@
 :set nocp
-:set hls is "hlsearch (highlight search) and incsearch (incremental search"
-:set ruler "Show line & col number"
-:set showcmd "Show leader keys"
-:set number "Show left hand line #'s"
+"hlsearch (highlight search) and incsearch (incremental search)
+:set hls is
+"Show line & col number
+:set ruler 
+"Show key buffer
+:set showcmd 
+"Show left hand line #'s
+:set number 
 :set autoindent
+"Copy to machine clipboard
 :set clipboard+=unnamed
 
 "Set black hole registers 
