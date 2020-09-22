@@ -10,7 +10,10 @@
 :set autoindent
 "Copy to machine clipboard
 :set clipboard+=unnamed
-xnoremap y "+y
+" xnoremap y "+y
+" nnoremap y "+y
+xnoremap y *+y
+nnoremap y *+y
 
 "Set black hole registers 
 nnoremap <leader>d "_d 
@@ -21,5 +24,7 @@ nnoremap x "_x
 :set shiftwidth=4
 :set tabstop=4
 
-"For CLI
-inoremap { {}<Esc>ha
+"BELOW ARE ONLY FOR ideaVim"
+:map <C-s> :w! <Enter> <Esc> 
+:inoremap <C-e> <Esc> A
+:inoremap <C-a> <Esc> I
