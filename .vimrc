@@ -8,9 +8,10 @@
 "Show left hand line #'s
 :set number 
 :set autoindent
-"Copy to machine clipboard
-:set clipboard+=unnamed
-xnoremap y "+y
+
+:filetype plugin on
+:filetype indent on
+:syntax on
 
 "Set black hole registers 
 nnoremap <leader>d "_d 
