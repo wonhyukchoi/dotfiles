@@ -1,0 +1,6 @@
+// VS Code settings
+{
+    "editor.mouseWheelZoom": true,
+    "window.zoomLevel": 3,
+    "keyboard.dispatch": "keyCode"
+}
