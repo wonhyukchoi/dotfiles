@@ -6,6 +6,7 @@ sudo pacman -S vim
 sudo pacman -S docker
 sudo pacman -S nodejs
 sudo pacman -S dos2unix
+sudo pacman -S latexlive-most
 
 python3 -m pip install -U pip
 python3 -m pip install numpy pandas matplotlib ipython
