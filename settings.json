@@ -1,6 +1,30 @@
-// VS Code settings
 {
     "editor.mouseWheelZoom": true,
     "window.zoomLevel": 3,
-    "keyboard.dispatch": "keyCode"
+    "keyboard.dispatch": "keyCode",
+    "reason.path.ocamlmerlin": "/home/wonhyuk/.opam/default/bin/ocamlmerlin",
+    "latex-workshop.view.pdf.viewer": "tab",
+    "vim.vimrc.path": "/home/wonhyuk/.vimrc",
+    "cSpell.userWords": [
+        "customizability"
+    ],
+    "latex-workshop.latex.recipes": [
+        {
+            "name": "minimal",
+            "tools": [
+                "pdflatex"
+            ]
+        }
+]
+//     "latex-workshop.latex.recipes": [
+//         {
+//             "name": "pdflatex ➞ bibtex ➞ pdflatex × 2",
+//             "tools": [
+//                 "pdflatex",
+//                 "bibtex",
+//                 "pdflatex",
+//                 "pdflatex"
+//             ]
+//         }
+// ]
 }
