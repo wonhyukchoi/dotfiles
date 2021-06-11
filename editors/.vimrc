@@ -31,6 +31,8 @@ Plugin 'rhysd/vim-grammarous.git'
 Plugin 'wakatime/vim-wakatime'
 Plugin 'dense-analysis/ale'
 Plugin 'ludovicchabant/vim-gutentags'
+Plugin 'tpope/vim-commentary'
+
 
 "
 " All of your Plugins must be added before the following line

@@ -9,6 +9,7 @@ pkg install xmodmap
 pkg install devel/ruby-gems
 gem install lolcat
 pkg install xdotool
+pkg install texlive-full
 
 python3 -m ensure pip
 python3 -m pip install -U pip
