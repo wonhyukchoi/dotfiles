@@ -5,7 +5,10 @@ alias code=code-oss
 set -o vi
 alias caps-off="xdotool key Caps_Lock"
 alias l="ls | lolcat"
+alias ll="ls -lh | lolcat"
 alias spotify="sudo pkill avahi; spotifyd --no-daemon"
+alias open="xdg-open"
+alias ntfs-fix="ntfs-fix"
 export EDITOR=vim
 
 
