@@ -10,6 +10,9 @@ alias spotify="sudo pkill avahi; spotifyd --no-daemon"
 alias open="xdg-open"
 alias ntfs-fix="ntfs-fix"
 export EDITOR=vim
+alias font24="setfont ter-d24b.psf.gz"
+alias font28="setfont ter-d28b.psf.gz"
+alias caps-esc="echo keycode 58 = Escape | loadkeys - "
 
 
 # https://zeee.io/2020/08/02/manjaro-xfce-korean-input-setup/
