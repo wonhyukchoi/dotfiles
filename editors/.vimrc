@@ -79,3 +79,42 @@ nnoremap x "_x
 
 "For CLI
 inoremap { {}<Esc>ha
+
+let g:fontsize = 24
+
+function ZoomIn()
+	if g:fontsize ==# 20
+		execute "!setfont ter-d22b.psf.gz"
+		let g:fontsize = 22
+	elseif g:fontsize ==# 22
+		execute "!setfont ter-d24b.psf.gz"
+		let g:fontsize = 24
+	elseif g:fontsize ==# 24
+		execute "!setfont ter-d28b.psf.gz"
+		let g:fontsize = 28
+	elseif g:fontsize ==# 28
+		execute "!setfont ter-d32b.psf.gz"
+		let g:fontsize = 32
+	endif
+endfunction
+
+function ZoomOut()
+	if g:fontsize ==# 22
+		execute "!setfont ter-d20b.psf.gz"
+		let g:fontsize = 20
+	elseif g:fontsize ==# 24
+		execute "!setfont ter-d22b.psf.gz"
+		let g:fontsize = 22
+	elseif g:fontsize ==# 28
+		execute "!setfont ter-d24b.psf.gz"
+		let g:fontsize = 24
+	elseif g:fontsize ==# 32
+		execute "!setfont ter-d28b.psf.gz"
+		let g:fontsize = 28
+	endif
+endfunction
+
+map  <F2> :call ZoomIn()  <CR><CR>
+map! <F2> :call ZoomIn()  <CR><CR>
+map  <F3> :call ZoomOut() <CR><CR>
+map! <F3> :call ZoomOut() <CR><CR>
