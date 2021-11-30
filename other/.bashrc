@@ -1,25 +1,47 @@
-echo "Good day!" | lolcat -a -d 10 -s 47
-xmodmap ~/.Xmodmap
+alias xmod="xmodmap ~/.Xmodmap"
 alias vi=vim
-alias code=code-oss
 set -o vi
+alias t="tmux"
+alias tt="tmux new -s base"
 alias caps-off="xdotool key Caps_Lock"
 alias l="ls | lolcat"
 alias ll="ls -lh | lolcat"
-alias spotify="sudo pkill avahi; spotifyd --no-daemon"
 alias open="xdg-open"
-alias ntfs-fix="ntfs-fix"
+alias ntfsfix="ntfsfix"
+#https://bbs.archlinux.org/viewtopic.php?id=249867
+alias ath10k="sudo modprobe -r ath10k_pci && sudo modprobe ath10k_pci"
+alias bluetooth="sudo systemctl start bluetooth"
+alias timer="/home/wonhyuk/mnt/code/apps/timer/timer.sh"
+alias docker-start="systemctl start docker"
+alias otex="open main.pdf"
 export EDITOR=vim
+export PATH=$PATH:/home/wonhyuk/.local/bin
+export PATH=$PATH:/usr/racket/bin
 alias font24="setfont ter-d24b.psf.gz"
 alias font28="setfont ter-d28b.psf.gz"
 alias caps-esc="echo keycode 58 = Escape | loadkeys - "
+alias battery="acpi -V"
+alias weather="curl wttr.in/?m"
 
+if [ $(tty) = "/dev/tty3" ]; then
+	setfont "ter-d24b.psf.gz"
+	neofetch
+else
+	xmodmap ~/.Xmodmap
+	echo "Good day!" | lolcat -a -d 10 -s 47
+fi
+
+mkcd ()
+{
+    mkdir -p -- "$1" &&
+      cd -P -- "$1"
+}
 
 # https://zeee.io/2020/08/02/manjaro-xfce-korean-input-setup/
-export GTK_IM_MODULE=ibus
-export XMODIFIERS=@im=ibus
-export QT_IM_MODULE=ibus
-ibus-daemon -drx
+#export GTK_IM_MODULE=ibus
+#export XMODIFIERS=@im=ibus
+#export QT_IM_MODULE=ibus
+#ibus-daemon -drxR
 
 [[ $- != *i* ]] && return
 
@@ -155,3 +177,4 @@ ex ()
     echo "'$1' is not a valid file"
   fi
 }
+. "$HOME/.cargo/env"
