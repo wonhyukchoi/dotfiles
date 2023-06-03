@@ -1,13 +1,11 @@
 {
     "editor.mouseWheelZoom": true,
+    "haskell.manageHLS": "GHCup",
     "window.zoomLevel": 3,
+    "vim.useSystemClipboard": true,
     "keyboard.dispatch": "keyCode",
-    "reason.path.ocamlmerlin": "/home/wonhyuk/.opam/default/bin/ocamlmerlin",
     "latex-workshop.view.pdf.viewer": "tab",
     "vim.vimrc.path": "/home/wonhyuk/.vimrc",
-    "cSpell.userWords": [
-        "customizability"
-    ],
     "latex-workshop.latex.recipes": [
         {
             "name": "minimal",
