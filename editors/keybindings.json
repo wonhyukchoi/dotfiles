@@ -17,10 +17,10 @@
     },
     {
         "key": "ctrl+cmd+h",
-        "command": "workbench.action.moveEditorToNextGroup",
+        "command": "workbench.action.moveEditorToPreviousGroup",
     },
     {
         "key": "ctrl+cmd+l",
-        "command": "workbench.action.moveEditorToPreviousGroup",
+        "command": "workbench.action.moveEditorToNextGroup",
     }
 ]
